@@ -67,10 +67,10 @@ endef
 
 define Device/asus_rp-n53
   SOC := mt7620a
-  IMAGE_SIZE := 7872k
+  IMAGE_SIZE := 16064k
   DEVICE_VENDOR := Asus
   DEVICE_MODEL := RP-N53
-  DEVICE_PACKAGES := kmod-rt2800-pci
+  DEVICE_PACKAGES := kmod-rt2800-pci kmod-usb-ohci 
   SUPPORTED_DEVICES += rp-n53
 endef
 TARGET_DEVICES += asus_rp-n53

@@ -67,7 +67,7 @@ endef
 
 define Device/asus_rp-n53
   SOC := mt7620a
-  IMAGE_SIZE := 16064k
+  IMAGE_SIZE := $(ralink_default_fw_size_32M)
   DEVICE_VENDOR := Asus
   DEVICE_MODEL := RP-N53
   DEVICE_PACKAGES := kmod-rt2800-pci kmod-usb-ohci 
